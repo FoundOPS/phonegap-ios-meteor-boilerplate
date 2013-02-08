@@ -12,8 +12,10 @@ if (Meteor.isClient) {
     Template.hello.events({
         'click input.inc' : function () {
             var input = document.getElementById("inputtext");
-            Todos.insert({item: input.value});
-            input.value = "";
+            if (input.value != "") {
+                Todos.insert({item: input.value});
+                input.value = "";
+            }
         }, 'click input.clear' : function () {
             Todos.remove({});
         }
