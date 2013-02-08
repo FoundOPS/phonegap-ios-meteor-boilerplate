@@ -1,0 +1,26 @@
+<head>
+	<title>Todo List</title>
+</head>
+
+<body>
+	{{> hello}}
+</body>
+
+<template name="hello">
+	<h1>{{greeting}}</h1>
+	<input type="text" id="inputtext"/>
+	<br/>
+	<input type="button" class="inc" value="MUST... DO... IT... TOMORROW!" />
+	<input type="button" class="clear" value="I AM FREE!" />
+	<div class="todolist">
+	{{#each todos}}
+		{{> todo}}
+	{{/each}}
+	</div>
+</template>
+
+<template name="todo">
+	<div class="todolist item">
+		<span class"todolist item">{{item}}</span>
+	</div>
+</template>

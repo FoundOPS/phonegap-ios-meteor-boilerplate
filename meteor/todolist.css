@@ -1,0 +1,18 @@
+/* CSS declarations go here */
+
+* {
+	font-family: Helvetica, arial, sans-serif;
+	font-size: 16px;
+}
+
+input {
+	
+}
+
+.todolist {
+	padding: 5px;
+}
+
+.todolist .item {
+	border: solid green 1px;
+}
