@@ -22,10 +22,10 @@ if (Meteor.isClient) {
     });
 
     document.addEventListener("deviceready", function(){
-       alert(device.platform);
+       alert("Welcome to TodoList on " + device.platform);
 
         if(navigator.notification){
-            navigator.notification.vibrate(6000);
+            navigator.notification.vibrate(1000);
         }
 
     }, false);
