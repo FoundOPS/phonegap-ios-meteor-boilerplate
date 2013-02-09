@@ -24,9 +24,9 @@ if (Meteor.isClient) {
     document.addEventListener("deviceready", function(){
        alert("Welcome to TodoList on " + device.platform);
 
-        if(navigator.notification){
-            navigator.notification.vibrate(1000);
-        }
+       if(navigator.notification){
+           navigator.notification.vibrate(1000);
+       }
 
     }, false);
     
